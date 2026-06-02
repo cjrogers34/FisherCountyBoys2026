@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Fisher County Boys Reunion</title>
+
+<style>
+:root{
+  --gold:#f0b867;
+  --cream:#f7dfb7;
+}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{
+  margin:0;
+  color:var(--cream);
+  font-family: Georgia, serif;
+  background:
+  radial-gradient(circle at top, rgba(255,140,50,.25), transparent 30rem),
+  linear-gradient(180deg,#2a0902 0%, #0d0402 45%, #080808 100%);
+}
+.wrap{
+  max-width:760px;
+  margin:auto;
+  padding:10px;
+}
+.poster-card{
+  border:2px solid rgba(240,184,103,.28);
+  border-radius:24px;
+  overflow:hidden;
+  box-shadow:0 18px 50px rgba(0,0,0,.55);
+}
+.poster{
+  width:100%;
+  display:block;
+}
+.nav{
+  position:sticky;
+  top:0;
+  z-index:100;
+  display:flex;
+  gap:10px;
+  justify-content:center;
+  overflow-x:auto;
+  background:rgba(8,4,2,.94);
+  padding:12px;
+  border-top:1px solid rgba(240,184,103,.15);
+  border-bottom:1px solid rgba(240,184,103,.15);
+}
+.nav a{
+  text-decoration:none;
+  color:var(--cream);
+  border:1px solid rgba(240,184,103,.4);
+  border-radius:999px;
+  padding:10px 16px;
+  background:#1a0b07;
+  font-weight:bold;
+  white-space:nowrap;
+}
+.theme-strip{
+  display:grid;
+  grid-template-columns:repeat(3,1fr);
+  gap:12px;
+  margin:20px 0;
+}
+.mini{
+  background:rgba(80,25,10,.45);
+  border:1px solid rgba(240,184,103,.25);
+  border-radius:20px;
+  text-align:center;
+  padding:14px;
+  font-weight:bold;
+}
+.section{
+  margin:20px 0;
+  background:#10131d;
+  border-radius:24px;
+  padding:22px;
+  border:1px solid rgba(240,184,103,.25);
+}
+.day-head{
+  display:flex;
+  justify-content:space-between;
+  align-items:center;
+}
+.day-head h2{
+  margin:0;
+  color:var(--gold);
+  text-transform:uppercase;
+}
+.badge{
+  border:1px solid rgba(240,184,103,.45);
+  border-radius:999px;
+  padding:6px 10px;
+  background:#3a160a;
+  font-size:.8rem;
+}
+.row{
+  display:grid;
+  grid-template-columns:120px 1fr;
+  gap:12px;
+  padding:15px 0;
+  border-bottom:1px dashed rgba(255,255,255,.12);
+}
+.row:last-child{border-bottom:none}
+.time{
+  color:var(--gold);
+  text-transform:uppercase;
+  font-weight:bold;
+}
+.footer{
+  text-align:center;
+  padding:40px 10px 60px;
+}
+.logo-bottom{
+  width:180px;
+  max-width:55vw;
+  margin:20px auto;
+  display:block;
+}
+a.maplink{
+ color:var(--gold);
+ text-decoration:none;
+ font-weight:bold;
+}
+@media(max-width:600px){
+  .row{grid-template-columns:1fr}
+  .theme-strip{grid-template-columns:1fr}
+}
+</style>
+</head>
+<body>
+
+<div class="wrap">
+  <div class="poster-card">
+    <img class="poster" src="hero.png" alt="Fisher County Boys Reunion poster">
+  </div>
+</div>
+
+<nav class="nav">
+  <a href="#friday">Friday</a>
+  <a href="#saturday">Saturday</a>
+  <a href="#sunday">Sunday</a>
+  <a href="#location">Location</a>
+</nav>
+
+<div class="wrap">
+
+<section id="location" class="section">
+  <div class="day-head">
+    <h2>Location</h2>
+    <span class="badge">Sleepover HQ</span>
+  </div>
+
+  <div class="row">
+    <div class="time">Address</div>
+    <div>
+      815 County Road 427<br>
+      Roby, TX
+      <br><br>
+
+      <a class="maplink" href="https://maps.google.com/?q=815+County+Road+427+Roby+TX">
+      Open in Maps →
+      </a>
+
+      <br><br>
+
+      <a class="maplink" href="https://waze.com/ul?q=815%20County%20Road%20427%20Roby%20TX&navigate=yes">
+      Open in Waze →
+      </a>
+    </div>
+  </div>
+</section>
+
+<section class="theme-strip">
+  <div class="mini">🏊 Pool Time</div>
+  <div class="mini">🛶 Kayak Chaos</div>
+  <div class="mini">🏅 Leisure Olympics</div>
+</section>
+
+<section id="friday" class="section">
+<div class="day-head">
+<h2>Friday</h2>
+<span class="badge">Arrival Day</span>
+</div>
+
+<div class="row">
+<div class="time">Afternoon</div>
+<div>Arrivals, pool, drinking.</div>
+</div>
+
+<div class="row">
+<div class="time">Evening</div>
+<div>Dinner, drinking, laughing, relive glory days, drinking.</div>
+</div>
+</section>
+
+<section id="saturday" class="section">
+<div class="day-head">
+<h2>Saturday</h2>
+<span class="badge">Main Event</span>
+</div>
+
+<div class="row">
+<div class="time">Morning</div>
+<div>Breakfast, rehydrate, pain reliever, clean up mess from Friday.</div>
+</div>
+
+<div class="row">
+<div class="time">Mid-Morning</div>
+<div>Pool, music, snack, drinking.</div>
+</div>
+
+<div class="row">
+<div class="time">Afternoon / Evening</div>
+<div>Pool, drinking, snack.</div>
+</div>
+
+<div class="row">
+<div class="time">Evening</div>
+<div>Dinner, Leisure Olympics, drinking.</div>
+</div>
+</section>
+
+<section id="sunday" class="section">
+<div class="day-head">
+<h2>Sunday</h2>
+<span class="badge">Recovery</span>
+</div>
+
+<div class="row">
+<div class="time">Morning</div>
+<div>Coffee, breakfast, departures.</div>
+</div>
+</section>
+
+<div class="footer">
+<div>July 10–12 • A Cute Little Sleepover</div>
+<img class="logo-bottom" src="logo.png" alt="round reunion logo">
+</div>
+
+</div>
+</body>
+</html>
